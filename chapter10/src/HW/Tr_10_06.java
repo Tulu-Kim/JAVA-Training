@@ -6,33 +6,29 @@ import javax.swing.*;
 
 import HW.Tr_10_02.MyMouse;
 
-class Tr_10_06 extends JFrame{
+class Tr_10_06 extends JFrame implements MouseListener{
 	JLabel la = new JLabel("c");
 	public Tr_10_06() {
 	setTitle("C");
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	Container c = getContentPane();
 	c.setLayout(null);
-	
-	
+		
 	la.setLocation(100,100);
-	la.setSize(20,20);
+	la.setSize(50,50);
 	c.add(la);
-	
-	MyMouse listener = new MyMouse();
-	c.addMouseListener(listener);
 	setSize(500,500);
 	setVisible(true);
-		
+	
+	la.addMouseListener(this);
+	this.addMouseListener(this);
 	}
 
-
-class MyMouse implements MouseListener{
 	public void mouseClicked(MouseEvent e) {
-		int x = 0,y=0;
+		
+		int x=(int)(Math.random()*450);
+		int y=(int)(Math.random()*450);
 		if(e.getSource()==la)
-		x=(int)(Math.random()*150);
-		y=(int)(Math.random()*150);
 		la.setLocation(x,y);
 	}
 
@@ -61,8 +57,6 @@ class MyMouse implements MouseListener{
 	}
 
 	
-}
-
 	public static void main(String[] ar) {
 		new Tr_10_06();
 	}

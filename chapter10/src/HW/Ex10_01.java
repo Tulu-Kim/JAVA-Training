@@ -1,10 +1,11 @@
+
 //예제 10-1
 package HW;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-public class Hw10_01 extends JFrame{
-	public Hw10_01() {
+public class Ex10_01 extends JFrame{
+	public Ex10_01() {
 		setTitle("Action 이벤트 리스너 예쪠");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
@@ -17,7 +18,7 @@ public class Hw10_01 extends JFrame{
 		setVisible(true);
 	}
 	public static void main(String[] args) {
-		new Hw10_01();
+		new Ex10_01();
 	}
 }
 
