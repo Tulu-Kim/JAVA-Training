@@ -13,12 +13,17 @@
 	
 
 			c.setLayout(gc);
-			for(int i =1;i<10;i++) {
-				String txt = Integer.toString(i);
+			for(int i =0;i<col.length;i++) {
+				   String txt = Integer.toString(i);
 					JButton bt = new JButton(txt);
 					c.add(bt);
-					bt.setBackground(col[i]);	
-			} 
+					//bt.setBackground(col[i]);	
+				} 
+			/*for(int co=0;co<col.length;co++) {
+				String txt = Integer.toString(co);
+				JButton bt = new JButton(txt);
+					bt.setBackground(col[co]);
+			}*/
 			
 
 			setSize(800,350);
