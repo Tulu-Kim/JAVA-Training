@@ -1,9 +1,8 @@
+//½Ç½À10-02
 package HW;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
 public class Tr_10_02 extends JFrame{
 	Container c = getContentPane();
 	public Tr_10_02() {

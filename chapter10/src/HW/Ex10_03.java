@@ -1,5 +1,5 @@
+//¿¹Á¦10-3
 package HW;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

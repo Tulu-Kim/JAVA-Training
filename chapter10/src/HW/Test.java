@@ -2,7 +2,7 @@
 package HW;
 import java.awt.*;
 import javax.swing.*;
-class Test3_sub extends JFrame{
+class Test_sub extends JFrame{
 	Button b1 = new Button("==");
 	private Label lb1=new Label("표준 ",Label.LEFT);
 	Button b2 = new Button("top");
@@ -28,7 +28,7 @@ class Test3_sub extends JFrame{
 	private Panel p11 = new Panel();
 
 	JButton[] jbtn = new JButton[5]; 
-	public Test3_sub(String title) {
+	public Test_sub(String title) {
 		super(title);//제목을 가지는 프레임 생성을 할 수 있음.		
 		super.setSize(400,650);
 		
@@ -111,8 +111,8 @@ class Test3_sub extends JFrame{
 		this.add(p11);//"+/-" , "0" , "." , "="	
 	}	
 }
-public class Test3 {
+public class Test {
 	public static void main(String[] ar) {
-		new Test3_sub("제목");
+		new Test_sub("제목");
 	}
 }

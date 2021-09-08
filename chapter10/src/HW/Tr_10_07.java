@@ -1,10 +1,8 @@
+//½Ç½À10-07
 package HW;
-
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
 public class Tr_10_07 extends JFrame  {
 	private JLabel jl = new JLabel("Love Java");
 	public Tr_10_07() {

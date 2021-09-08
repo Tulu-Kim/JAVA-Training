@@ -1,11 +1,8 @@
+//½Ç½À10-06
 package HW;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
-import HW.Tr_10_02.MyMouse;
-
 class Tr_10_06 extends JFrame implements MouseListener{
 	JLabel la = new JLabel("c");
 	public Tr_10_06() {

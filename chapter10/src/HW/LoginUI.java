@@ -1,8 +1,7 @@
+//로그인UI 만들기
 package HW;
-
 import java.awt.*;
 import javax.swing.*;
-
 class LoginUI_sub extends JFrame{
 	
 	private TextField idt=new TextField(35);

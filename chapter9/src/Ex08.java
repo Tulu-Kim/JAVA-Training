@@ -4,13 +4,14 @@ import java.awt.*;
 class Ex08_sub extends Frame{
 	
 		private Button bt1 = new Button("AAA");
+		private Button bt1e = new Button("AAAA");
 		private Button bt2 = new Button("BBB");
 		private Button bt3 = new Button("CCC");
 		private Button bt4 = new Button("DDD");
 		private Button bt5 = new Button("EEE");
 		private Button bt6 = new Button("FFF");
 		private Button bt7 = new Button("GGG");
-
+		private Panel p1 = new Panel();
 	
         GridBagLayout gbl = new GridBagLayout();
         
@@ -35,10 +36,7 @@ class Ex08_sub extends Frame{
 	}
 		public void init(){
 			this.setLayout(gbl);
-			gc.gridx=0;
-			gc.gridy=0;
-			gbl.setConstraints(bt1, gc);//현제의 bt1을 gc의 위치내용대로 표시하겠단,내용
-			this.add(bt1);
+		
 			
 			gc.gridx=1;
 			gc.gridy=1;

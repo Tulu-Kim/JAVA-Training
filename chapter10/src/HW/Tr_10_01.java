@@ -1,9 +1,8 @@
+//½Ç½À10-01
 package HW;
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
 class Tr_10_01_sub extends JFrame implements MouseListener{
 	    JLabel la = new JLabel("»ç¶ûÇØ");
 	    Container c = getContentPane();
