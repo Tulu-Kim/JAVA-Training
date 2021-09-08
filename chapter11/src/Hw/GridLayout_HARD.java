@@ -1,3 +1,4 @@
+//도전문제
 package Hw;
 import javax.swing.*;
 import java.awt.*;
@@ -8,7 +9,7 @@ public class GridLayout_HARD extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
 		c.setLayout(new GridLayout(2,5));
-	    //이미지 체크박스에 사용할 9개의 미지기 객체 생성
+	    
 		ImageIcon cherry = new ImageIcon("images/cherry.jpg");
 		ImageIcon image1 = new ImageIcon("images/img1.jpg");
 		ImageIcon apple = new ImageIcon("images/apple.jpg");
@@ -19,7 +20,7 @@ public class GridLayout_HARD extends JFrame{
 		ImageIcon img = new ImageIcon("images/img.jpg");
 		ImageIcon normalIcon = new ImageIcon("images/normalIcon.gif");
 		
-		//9개의 체크박스 생성
+		
 		JButton cherry_bt = new JButton(cherry);
 		JButton image1_bt = new JButton(image1);
 		JButton apple_bt = new JButton(apple);
@@ -30,7 +31,7 @@ public class GridLayout_HARD extends JFrame{
 		JButton img_bt = new JButton(img);
 		JButton normalIcon_bt = new JButton(normalIcon);
 	
-		//컨텐트팬에 9개의 체크박스 부착
+		
 		c.add(cherry_bt);
 		c.add(image1_bt);
 		c.add(apple_bt);

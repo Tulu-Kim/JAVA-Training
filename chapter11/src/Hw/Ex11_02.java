@@ -1,3 +1,4 @@
+//예제11-02
 package Hw;
 import javax.swing.*;
 import java.awt.*;
@@ -11,17 +12,17 @@ public class Ex11_02 extends JFrame{
 		Container c = getContentPane();
 		c.setLayout(new FlowLayout());
 		
-		//문자열 레이블 생성
+		
 		JLabel textLabel = new JLabel("사랑합니다.");
-		//이미지 레이블 생성
+		
 		ImageIcon beauty = new ImageIcon("imgaes/beauty.jpg");
 		JLabel imgeLabel = new JLabel(beauty);
 		
-		//문자열과 이미지를 모두 가진 레이블 생성
+		
 		ImageIcon normalIcon = new ImageIcon("images/normalIcon.gif");
 		JLabel label = new JLabel("보고싶으면 전화하세요",normalIcon,SwingConstants.CENTER);
 		
-		//컨텐트팬에 3개의 레이블 부착
+		
 		c.add(textLabel);
 		c.add(imgeLabel);
 		c.add(label);
