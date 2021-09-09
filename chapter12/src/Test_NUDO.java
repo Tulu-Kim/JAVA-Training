@@ -6,18 +6,23 @@
 import java.awt.*;
 import java.awt.event.*;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
-class Ex04_sub extends Frame implements ItemListener, MouseListener {
+
+class Test_NUDO_sub extends Frame implements ItemListener, MouseListener {
 	private MenuBar mb = new MenuBar();
 	private Menu draw = new Menu("DRAW");
 	private CheckboxMenuItem line = new CheckboxMenuItem("LINE");
 	private CheckboxMenuItem oval = new CheckboxMenuItem("OVAL");
 	private CheckboxMenuItem rect = new CheckboxMenuItem("RECT");
+	private Menu col = new Menu("COLOR");
+	private CheckboxMenuItem black = new CheckboxMenuItem("Black");
+	private CheckboxMenuItem yellow = new CheckboxMenuItem("Yellow ");
+	private CheckboxMenuItem green = new CheckboxMenuItem("Green");
 
 	private int x, y, x1, y1;
 
-	public Ex04_sub(String title) {
+	public Test_NUDO_sub(String title) {
 		super(title);// 제목을 가지는 프레임 생성을 할 수 있음.
 		super.setSize(500, 300);
 		this.init();
@@ -37,6 +42,10 @@ class Ex04_sub extends Frame implements ItemListener, MouseListener {
 		draw.add(oval);
 		draw.add(rect);
 		mb.add(draw);
+		col.add(black);
+		col.add(yellow);
+		col.add(green);
+		mb.add(col);
 		this.setMenuBar(mb);
 	}
 
@@ -57,11 +66,14 @@ class Ex04_sub extends Frame implements ItemListener, MouseListener {
 		 paint(g);
 	 }
 	public void paint(Graphics g) {
+		
 		if (line.getState() == true) {
-			g.drawLine(x, y, x1, y1);
+						g.drawLine(x, y, x1, y1);
 		} else if (oval.getState() == true) {
+			
 			g.drawOval(x, y, x1 - x, y1 - y);
 		} else if (rect.getState() == true) {
+			
 			g.drawRect(x, y, x1 - x, y1 - y);
 		}
 	}
@@ -111,8 +123,8 @@ class Ex04_sub extends Frame implements ItemListener, MouseListener {
 	}
 }
 
-public class Ex04 {
+public class Test_NUDO {
 	public static void main(String[] ar) {
-		new Ex04_sub("그림판");
+		new Test_NUDO_sub("그림판");
 	}
 }
