@@ -9,8 +9,9 @@ public class GridLayout_HARD extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
 		c.setLayout(new GridLayout(2,5));
-	    
-		ImageIcon cherry = new ImageIcon("images/cherry.jpg");
+	    Object[] imege_list;
+		
+	    ImageIcon cherry = new ImageIcon("images/cherry.jpg");
 		ImageIcon image1 = new ImageIcon("images/img1.jpg");
 		ImageIcon apple = new ImageIcon("images/apple.jpg");
 		ImageIcon kiwi = new ImageIcon("images/kiwi.jpg");
