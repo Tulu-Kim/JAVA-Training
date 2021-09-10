@@ -1,13 +1,12 @@
 
- 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Vector;
 
-public class LineDrawEx extends JFrame {
+public class Test_03 extends JFrame {
 	
-	public LineDrawEx(){
+	public Test_03(){
 		setContentPane(new MyPanel());
 		setSize(300,300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -30,6 +29,7 @@ public class LineDrawEx extends JFrame {
 			this.addMouseMotionListener(ml);
 		}
 		
+		
 		public void paintComponent(Graphics g){
 			super.paintComponent(g); 
 			
@@ -51,7 +51,6 @@ public class LineDrawEx extends JFrame {
 			}
 			public void mouseReleased(MouseEvent e){
 				vEnd.add(e.getPoint()); 
-				pEnd = e.getPoint();
 				repaint();
 			}
 			
@@ -67,6 +66,6 @@ public class LineDrawEx extends JFrame {
 	}
 	
 	public static void main(String[] args) {
-		new LineDrawEx();
+		new Test_03();
 	}
 }

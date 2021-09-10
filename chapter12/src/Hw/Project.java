@@ -6,23 +6,18 @@
 import java.awt.*;
 import java.awt.event.*;
 
-import javax.swing.*;
+import javax.swing.JFrame;
 
-
-class Test_NUDO_sub extends Frame implements ItemListener, MouseListener, MouseMotionListener {
+class Project_sub extends Frame implements ItemListener, MouseListener {
 	private MenuBar mb = new MenuBar();
 	private Menu draw = new Menu("DRAW");
 	private CheckboxMenuItem line = new CheckboxMenuItem("LINE");
 	private CheckboxMenuItem oval = new CheckboxMenuItem("OVAL");
 	private CheckboxMenuItem rect = new CheckboxMenuItem("RECT");
-	private Menu col = new Menu("COLOR");
-	private CheckboxMenuItem black = new CheckboxMenuItem("Black");
-	private CheckboxMenuItem yellow = new CheckboxMenuItem("Yellow ");
-	private CheckboxMenuItem green = new CheckboxMenuItem("Green");
 
-	private int x, y, x1, y1,strt_x,strt_y,end_x,end_y;
+	private int x, y, x1, y1;
 
-	public Test_NUDO_sub(String title) {
+	public Project_sub(String title) {
 		super(title);// 제목을 가지는 프레임 생성을 할 수 있음.
 		super.setSize(500, 300);
 		this.init();
@@ -42,10 +37,6 @@ class Test_NUDO_sub extends Frame implements ItemListener, MouseListener, MouseM
 		draw.add(oval);
 		draw.add(rect);
 		mb.add(draw);
-		col.add(black);
-		col.add(yellow);
-		col.add(green);
-		mb.add(col);
 		this.setMenuBar(mb);
 	}
 
@@ -66,29 +57,14 @@ class Test_NUDO_sub extends Frame implements ItemListener, MouseListener, MouseM
 		 paint(g);
 	 }
 	public void paint(Graphics g) {
-		
 		if (line.getState() == true) {
-						g.drawLine(x, y, x1, y1);
+			g.drawLine(x, y, x1, y1);
 		} else if (oval.getState() == true) {
-			
 			g.drawOval(x, y, x1 - x, y1 - y);
 		} else if (rect.getState() == true) {
-			
 			g.drawRect(x, y, x1 - x, y1 - y);
 		}
-		
-		
-		if (line.getState() == true) {
-			g.drawLine(strt_x, strt_y, end_x, end_y);
-		} else if (oval.getState() == true) {
-
-			g.drawOval(strt_x, strt_y, end_x - strt_x, end_y - strt_y);
-		} else if (rect.getState() == true) {
-
-			g.drawRect(strt_x, strt_y, end_x - strt_x, end_y - strt_y);
-		}
-		}
-	
+	}
 
 	@Override
 	public void itemStateChanged(ItemEvent e) {
@@ -106,13 +82,11 @@ class Test_NUDO_sub extends Frame implements ItemListener, MouseListener, MouseM
 
 	}
 
-	/*@Override
+	@Override
 	public void mousePressed(MouseEvent e) {
 		// TODO Auto-generated method stub
 		x = e.getX();
 		y = e.getY();
-		strt_x = e.getX();
-		strt_y = e.getY();
 
 	}
 
@@ -121,10 +95,8 @@ class Test_NUDO_sub extends Frame implements ItemListener, MouseListener, MouseM
 		// TODO Auto-generated method stub
 		x1 = e.getX();
 		y1 = e.getY();
-		end_x = e.getX();
-		end_y = e.getY();
 		this.repaint();
-	}*/
+	}
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
@@ -137,36 +109,10 @@ class Test_NUDO_sub extends Frame implements ItemListener, MouseListener, MouseM
 		// TODO Auto-generated method stub
 
 	}
-
-	@Override
-	public void mouseDragged(MouseEvent e) {
-		// TODO Auto-generated method stub
-		end_x = e.getX();
-		end_y = e.getY();
-		this.repaint();
-	}
-
-	@Override
-	public void mouseMoved(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
-		
-	}
 }
 
-public class Test_NUDO {
+public class Project {
 	public static void main(String[] ar) {
-		new Test_NUDO_sub("그림판");
+		new Project_sub("그림판");
 	}
 }
