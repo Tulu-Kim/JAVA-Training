@@ -57,7 +57,7 @@ public class ClockImg {
       panel_beaconU.setLayout(null);
       
       JButton btnBCU = new JButton("");
-      btnBCU.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\beaconUn.jpg"));
+      btnBCU.setIcon(new ImageIcon("images\\beaconUn.jpg"));
       btnBCU.setBounds(0, 0, 100, 100);
       panel_beaconU.add(btnBCU);
       
@@ -67,7 +67,7 @@ public class ClockImg {
       panel_beaconE.setLayout(null);
       
       JButton btnBCE = new JButton("");
-      btnBCE.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\beaconEn.jpg"));
+      btnBCE.setIcon(new ImageIcon("images\\beaconEn.jpg"));
       btnBCE.setBounds(0, 0, 100, 100);
       panel_beaconE.add(btnBCE);
       
@@ -82,7 +82,7 @@ public class ClockImg {
          }
       });
       
-      Clock1.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\Clockbird.jpg"));
+      Clock1.setIcon(new ImageIcon("images\\Clockbird.jpg"));
       Clock1.setBounds(0, 0, 500, 500);
       panelClock1.add(Clock1);
       
@@ -95,7 +95,7 @@ public class ClockImg {
       panelClock2.setLayout(null);
       
       JButton Clock2 = new JButton("");
-      Clock2.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\Clock2.jpg"));
+      Clock2.setIcon(new ImageIcon("images\\Clock2.jpg"));
       Clock2.setBounds(0, 0, 500, 500);
       panelClock2.add(Clock2);
       
@@ -110,7 +110,7 @@ public class ClockImg {
       panelClock3.setLayout(null);
       
       JButton Clock3 = new JButton("");
-      Clock3.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\Clock3.jpg"));
+      Clock3.setIcon(new ImageIcon("images\\Clock3.jpg"));
       Clock3.addActionListener(new ActionListener() {
          public void actionPerformed(ActionEvent e) {
          }
@@ -124,7 +124,7 @@ public class ClockImg {
       panelClock4.setLayout(null);
       
       JButton Clock4 = new JButton("");
-      Clock4.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\Clock4.jpg"));
+      Clock4.setIcon(new ImageIcon("images\\Clock4.jpg"));
       Clock4.addActionListener(new ActionListener() {
          public void actionPerformed(ActionEvent e) {
          }
@@ -145,7 +145,7 @@ public class ClockImg {
       });
       koreabtn.setBounds(0, 0, 50, 50);
       korea_panel.add(koreabtn);
-      koreabtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\korea.jpg"));
+      koreabtn.setIcon(new ImageIcon("images\\korea.jpg"));
       
       JPanel japan_panel = new JPanel();
       japan_panel.setBounds(550, 222, 50, 50);
@@ -157,7 +157,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      japanbtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\japan.jpg"));
+      japanbtn.setIcon(new ImageIcon("images\\japan.jpg"));
       japanbtn.setBounds(0, 0, 50, 50);
       japan_panel.add(japanbtn);
       
@@ -171,7 +171,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      chinabtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\china.jpg"));
+      chinabtn.setIcon(new ImageIcon("images\\china.jpg"));
       chinabtn.setBounds(0, 0, 50, 50);
       china_panel.add(chinabtn);
       
@@ -185,7 +185,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      usabtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\usa.jpg"));
+      usabtn.setIcon(new ImageIcon("images\\usa.jpg"));
       usabtn.setBounds(0, 0, 50, 50);
       usa_panel.add(usabtn);
       
@@ -199,7 +199,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      canadabtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\canada.jpg"));
+      canadabtn.setIcon(new ImageIcon("images\\canada.jpg"));
       canadabtn.setBounds(0, 0, 50, 50);
       canada_panel.add(canadabtn);
       
@@ -215,7 +215,7 @@ public class ClockImg {
       });
       ukbtn.setBounds(0, 0, 50, 50);
       uk_panel.add(ukbtn);
-      ukbtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\uk.jpg"));
+      ukbtn.setIcon(new ImageIcon("images\\uk.jpg"));
       
       JPanel france_panel = new JPanel();
       france_panel.setBounds(500, 372, 50, 50);
@@ -227,7 +227,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      francebtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\france.jpg"));
+      francebtn.setIcon(new ImageIcon("images\\france.jpg"));
       francebtn.setBounds(0, 0, 50, 50);
       france_panel.add(francebtn);
       
@@ -241,7 +241,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      italybtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\italy.jpg"));
+      italybtn.setIcon(new ImageIcon("images\\italy.jpg"));
       italybtn.setBounds(0, 0, 50, 50);
       italy_panel.add(italybtn);
       
@@ -255,7 +255,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      mexicobtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\mexico.jpg"));
+      mexicobtn.setIcon(new ImageIcon("images\\mexico.jpg"));
       mexicobtn.setBounds(0, 0, 50, 50);
       mexico_panel.add(mexicobtn);
       
@@ -269,7 +269,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      spainbtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\spain.jpg"));
+      spainbtn.setIcon(new ImageIcon("images\\spain.jpg"));
       spainbtn.setBounds(0, 0, 50, 50);
       spain_panel.add(spainbtn);
       
@@ -285,7 +285,7 @@ public class ClockImg {
       });
       egyptbtn.setBounds(0, 0, 50, 50);
       egypt_panel.add(egyptbtn);
-      egyptbtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\egypt.jpg"));
+      egyptbtn.setIcon(new ImageIcon("images\\egypt.jpg"));
       
       JPanel russia_panel = new JPanel();
       russia_panel.setBounds(550, 472, 50, 50);
@@ -297,7 +297,7 @@ public class ClockImg {
          public void actionPerformed(ActionEvent e) {
          }
       });
-      russiabtn.setIcon(new ImageIcon("C:\\CookJava\\hometraining\\images\\russia.jpg"));
+      russiabtn.setIcon(new ImageIcon("images\\russia.jpg"));
       russiabtn.setBounds(0, 0, 50, 50);
       russia_panel.add(russiabtn);
       
