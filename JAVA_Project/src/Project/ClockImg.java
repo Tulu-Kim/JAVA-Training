@@ -108,6 +108,7 @@ public class ClockImg {
       panelClock3.setBounds(0, 22, 500, 500);
       frame.getContentPane().add(panelClock3);
       panelClock3.setLayout(null);
+     
       
       JButton Clock3 = new JButton("");
       Clock3.setIcon(new ImageIcon("images\\Clock3.jpg"));
