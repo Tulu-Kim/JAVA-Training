@@ -11,14 +11,14 @@ public class ApiExplorer {
     public static void main(String[] args) throws IOException {
         StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst"); /*URL*/
         urlBuilder.append("?" + URLEncoder.encode("ServiceKey","UTF-8") + "=a9hu9qPFPJDEA4wbdhmOtDkiIHZZfol4LxJP3YjhtJ37g2fDbvDxKnxO%2FazD5Ncb3NKfjyuTC52jVFgR9OWqQQ%3D%3D"); /*Service Key*/
-        urlBuilder.append("&" + URLEncoder.encode("ServiceKey","UTF-8") + "=" + URLEncoder.encode("-", "UTF-8")); /*°ø°øµ¥ÀÌÅÍÆ÷ÅÐ¿¡¼­ ¹ÞÀº ÀÎÁõÅ°*/
-        urlBuilder.append("&" + URLEncoder.encode("pageNo","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*ÆäÀÌÁö¹øÈ£*/
-        urlBuilder.append("&" + URLEncoder.encode("numOfRows","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*ÇÑ ÆäÀÌÁö °á°ú ¼ö*/
-        urlBuilder.append("&" + URLEncoder.encode("dataType","UTF-8") + "=" + URLEncoder.encode("XML", "UTF-8")); /*¿äÃ»ÀÚ·áÇü½Ä(XML/JSON) Default: XML*/
-        urlBuilder.append("&" + URLEncoder.encode("base_date","UTF-8") + "=" + URLEncoder.encode("20210628", "UTF-8")); /*¡®21³â 6¿ù 28ÀÏ ¹ßÇ¥*/
-        urlBuilder.append("&" + URLEncoder.encode("base_time","UTF-8") + "=" + URLEncoder.encode("0600", "UTF-8")); /*06½Ã ¹ßÇ¥(Á¤½Ã´ÜÀ§) */
-        urlBuilder.append("&" + URLEncoder.encode("nx","UTF-8") + "=" + URLEncoder.encode("55", "UTF-8")); /*¿¹º¸ÁöÁ¡ÀÇ X ÁÂÇ¥°ª*/
-        urlBuilder.append("&" + URLEncoder.encode("ny","UTF-8") + "=" + URLEncoder.encode("127", "UTF-8")); /*¿¹º¸ÁöÁ¡ÀÇ Y ÁÂÇ¥°ª*/
+        urlBuilder.append("&" + URLEncoder.encode("ServiceKey","UTF-8") + "=" + URLEncoder.encode("-", "UTF-8")); /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°*/
+        urlBuilder.append("&" + URLEncoder.encode("pageNo","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£*/
+        urlBuilder.append("&" + URLEncoder.encode("numOfRows","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½*/
+        urlBuilder.append("&" + URLEncoder.encode("dataType","UTF-8") + "=" + URLEncoder.encode("XML", "UTF-8")); /*ï¿½ï¿½Ã»ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½(XML/JSON) Default: XML*/
+        urlBuilder.append("&" + URLEncoder.encode("base_date","UTF-8") + "=" + URLEncoder.encode("20210916", "UTF-8")); /*ï¿½ï¿½21ï¿½ï¿½ 6ï¿½ï¿½ 28ï¿½ï¿½ ï¿½ï¿½Ç¥*/
+        urlBuilder.append("&" + URLEncoder.encode("base_time","UTF-8") + "=" + URLEncoder.encode("0600", "UTF-8")); /*06ï¿½ï¿½ ï¿½ï¿½Ç¥(ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½) */
+        urlBuilder.append("&" + URLEncoder.encode("nx","UTF-8") + "=" + URLEncoder.encode("55", "UTF-8")); /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ X ï¿½ï¿½Ç¥ï¿½ï¿½*/
+        urlBuilder.append("&" + URLEncoder.encode("ny","UTF-8") + "=" + URLEncoder.encode("127", "UTF-8")); /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Y ï¿½ï¿½Ç¥ï¿½ï¿½*/
         URL url = new URL(urlBuilder.toString());
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
